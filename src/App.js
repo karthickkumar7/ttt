@@ -9,6 +9,8 @@ import PostDeatil from "./pages/PostDeatil";
 import D3js from "./pages/D3js";
 import TicTacToe from "./pages/TicTacToe";
 import ChatHome from "./pages/ChatHome";
+import Chess from "./pages/Chess";
+import Sudoku from "./pages/Sudoku";
 
 const App = () => {
   return (
@@ -20,6 +22,9 @@ const App = () => {
         <Route path="/d3js" element={<D3js />} />
         <Route path="/game" element={<TicTacToe />} />
         <Route path="/chat" element={<ChatHome />} />
+        <Route path="/chess" element={<Chess />} />
+        <Route path="/sudoku" element={<Sudoku />} />
+        <Route path="/*" element={<h1>404 Page Not Found</h1>} />
       </Routes>
     </BrowserRouter>
   );

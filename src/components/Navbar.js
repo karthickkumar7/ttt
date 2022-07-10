@@ -31,6 +31,13 @@ const Navbar = () => {
           >
             <Link to="/game">Game</Link>
           </li>
+          <li
+            className={`${
+              pathname === "/game" && "text-blue-200 underline"
+            } font-semibold text-xl cursor-pointer mx-4`}
+          >
+            <Link to="/chess">Chess</Link>
+          </li>
         </ul>
       </div>
     </div>
